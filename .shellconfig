@@ -1,0 +1,3 @@
+$(awk 'NF' ~/.env | grep -v '^#' | sed 's/^/export /')
+
+
