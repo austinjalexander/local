@@ -1,7 +1,12 @@
 # ALIAI
+[[ ! -d $HOME/gocode/src/github.com/austinjalexander ]] && mkdir -p $HOME/gocode/src/github.com/austinjalexander 
+alias ago="cd $HOME/gocode/src/github.com/austinjalexander && ls"
+
+[[ ! -d $HOME/gocode/src/github.com/udacity ]] && mkdir -p $HOME/gocode/src/github.com/udacity 
 alias ugo="cd $HOME/gocode/src/github.com/udacity && ls"
 
 # ENV VARS
+[[ ! -a ~/.env ]] && touch ~/.env 
 $(awk 'NF' ~/.env | grep -v '^#' | sed 's/^/export /')
 
 # Golang
