@@ -1,3 +1,12 @@
+# ALIAI
+alias ugo="cd $HOME/gocode/src/github.com/udacity && ls"
+
+# ENV VARS
 $(awk 'NF' ~/.env | grep -v '^#' | sed 's/^/export /')
 
+# Golang
+PATH=/Users/austin/gocode/bin:$PATH
+
+# Rails
+alias railsdb="rake db:drop && rake db:create && rake db:migrate && rake db:seed"
 
